@@ -1,14 +1,14 @@
-# homebrew-halo
+# homebrew-tap
 
-Homebrew tap for the [Halo platform CLI](https://github.com/mTABNPD/halo-platform-cli).
+mTAB's Homebrew tap. Hosts formulae for mTAB-internal CLIs distributed publicly as signed/notarized macOS binaries.
 
 ## Install
 
 ```
-brew install mTABNPD/halo/halo
+brew install mTABNPD/tap/halo
 ```
 
-The `mTABNPD/halo` short tap name resolves to this repository (`mTABNPD/homebrew-halo`).
+The `mTABNPD/tap` short tap name resolves to this repository (`mTABNPD/homebrew-tap`).
 
 ## Update
 
@@ -16,6 +16,12 @@ The `mTABNPD/halo` short tap name resolves to this repository (`mTABNPD/homebrew
 brew upgrade halo
 ```
 
+## Available formulae
+
+| Formula | Description | Source |
+|---|---|---|
+| `halo` | CLI for the Halo platform | [mTABNPD/halo-platform-cli](https://github.com/mTABNPD/halo-platform-cli) |
+
 ## Platforms
 
-Currently arm64 macOS only. Intel Mac and other platforms will be added as the CLI's release pipeline expands.
+Currently arm64 macOS only. Intel Mac and other platforms will be added as each CLI's release pipeline expands.
