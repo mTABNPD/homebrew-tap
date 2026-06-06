@@ -1,9 +1,9 @@
 class Pde < Formula
   desc "Internal mTAB developer CLI"
   homepage "https://github.com/mTABNPD/mtab-pde-cli"
-  version "0.1.0"
-  url "https://github.com/mTABNPD/homebrew-tap/releases/download/pde-v0.1.0/pde-darwin-aarch64.tar.gz"
-  sha256 "04339d6616b7e232fd926761958c42e4378b67de2c5e06a8fb495c3d367295c8"
+  version "0.1.1"
+  url "https://github.com/mTABNPD/homebrew-tap/releases/download/pde-v0.1.1/pde-darwin-aarch64.tar.gz"
+  sha256 "d33fa0817e199ec87d67c512677e798a1a4564a0db34e4e08660e5d7d7015a73"
 
   depends_on :macos
   depends_on arch: :arm64
@@ -13,6 +13,6 @@ class Pde < Formula
   end
 
   test do
-    assert_match "pde 0.1.0", shell_output("#{bin}/pde --version")
+    assert_match "pde 0.1.1", shell_output("#{bin}/pde --version")
   end
 end
