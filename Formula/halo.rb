@@ -1,9 +1,9 @@
 class Halo < Formula
   desc "CLI for the Halo platform"
   homepage "https://github.com/mTABNPD/halo-platform-cli"
-  version "0.2.23"
-  url "https://github.com/mTABNPD/homebrew-tap/releases/download/v0.2.23/halo-darwin-aarch64.tar.gz"
-  sha256 "c0c4597eb783a651070005233f5458fb95acd89d2a43e8b44f8237cd6cbefbb7"
+  version "0.2.24"
+  url "https://github.com/mTABNPD/homebrew-tap/releases/download/v0.2.24/halo-darwin-aarch64.tar.gz"
+  sha256 "28468eabe723437ce3384aaea13eb1b4404358738141f5d56e7d79fa4b3768bb"
 
   depends_on :macos
   depends_on arch: :arm64
