@@ -13,6 +13,6 @@ class Halo < Formula
   end
 
   test do
-    assert_match "halo 0.2.63", shell_output("#{bin}/halo --version")
+    assert_match "halo 0.2.65", shell_output("#{bin}/halo --version")
   end
 end
