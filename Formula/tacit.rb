@@ -4,28 +4,28 @@
 class Tacit < Formula
   desc "CLI + TUI for managing AWS SSM Parameter Store secrets"
   homepage "https://github.com/mTABNPD/tacit"
-  version "0.1.0"
+  version "0.2.0"
   license :cannot_represent # proprietary
 
   on_macos do
     on_arm do
-      url "https://github.com/mTABNPD/homebrew-tap/releases/download/tacit-v0.1.0/tacit-v0.1.0-darwin-arm64.tar.gz"
-      sha256 "7f7fce82882d8da868213e37d49cb3780f940ae904e56634c2efd2ade13b95ea"
+      url "https://github.com/mTABNPD/homebrew-tap/releases/download/tacit-v0.2.0/tacit-v0.2.0-darwin-arm64.tar.gz"
+      sha256 "2726ef63b379b80dd1490541791fd20321063515e16f3404108ffed175ccc2d3"
     end
     on_intel do
-      url "https://github.com/mTABNPD/homebrew-tap/releases/download/tacit-v0.1.0/tacit-v0.1.0-darwin-amd64.tar.gz"
-      sha256 "07bb471b9e7c54daec0d0160fd2ee326910ef93e009b10a6d525d2385242937a"
+      url "https://github.com/mTABNPD/homebrew-tap/releases/download/tacit-v0.2.0/tacit-v0.2.0-darwin-amd64.tar.gz"
+      sha256 "2a666fa83107a7b7e8782af5546b51051d949e74beb93b0da18c3581afb53eda"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/mTABNPD/homebrew-tap/releases/download/tacit-v0.1.0/tacit-v0.1.0-linux-arm64.tar.gz"
-      sha256 "1ad9265560032f559c90b16a61ea74acf332f6905a934565a6e01ab0ff54cb64"
+      url "https://github.com/mTABNPD/homebrew-tap/releases/download/tacit-v0.2.0/tacit-v0.2.0-linux-arm64.tar.gz"
+      sha256 "763fbe840ae17b3bf44124b401616415c52b0a714128eb962e3b93a4d6453c61"
     end
     on_intel do
-      url "https://github.com/mTABNPD/homebrew-tap/releases/download/tacit-v0.1.0/tacit-v0.1.0-linux-amd64.tar.gz"
-      sha256 "7c68f8a317781a5567dc694c36dbafe1c158904474628d9d176f9a8d540ebb57"
+      url "https://github.com/mTABNPD/homebrew-tap/releases/download/tacit-v0.2.0/tacit-v0.2.0-linux-amd64.tar.gz"
+      sha256 "6e17a3686d6c068624b41a8faeffde4a9e3971135ecf72a0751b77029a2c426d"
     end
   end
 
@@ -34,6 +34,6 @@ class Tacit < Formula
   end
 
   test do
-    assert_match "v0.1.0", shell_output("#{bin}/tacit --version")
+    assert_match "v0.2.0", shell_output("#{bin}/tacit --version")
   end
 end
