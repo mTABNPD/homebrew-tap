@@ -1,9 +1,9 @@
 class Halo < Formula
   desc "CLI for the Halo platform"
   homepage "https://github.com/mTABNPD/halo-platform-cli"
-  version "0.2.154"
-  url "https://github.com/mTABNPD/homebrew-tap/releases/download/v0.2.154/halo-darwin-aarch64.tar.gz"
-  sha256 "2b9d1537abb050b441f4fc816f28178ca969356ccb4e381c7d32e3d9991d8377"
+  version "0.2.158"
+  url "https://github.com/mTABNPD/homebrew-tap/releases/download/v0.2.158/halo-darwin-aarch64.tar.gz"
+  sha256 "e634cf64dbf71d6c6094f402be98b182fc64158a4e91804e83963ff4e2bdb1db"
 
   depends_on :macos
   depends_on arch: :arm64
@@ -13,6 +13,6 @@ class Halo < Formula
   end
 
   test do
-    assert_match "halo 0.2.154", shell_output("#{bin}/halo --version")
+    assert_match "halo 0.2.158", shell_output("#{bin}/halo --version")
   end
 end
